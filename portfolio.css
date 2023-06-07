@@ -1,6 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
 
+body{
+    background-color: #131316;
+    color: #ffffff;
+    font-family: "Poppins",sans-serif;
+    padding: 0;
+    margin: 0;
+}
+/* start of animated scrollbar */
+
+section{
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+.hidden{
+    opacity: 0;
+    transition: all 1s;
+}
+@media(prefers-reduce-motion){
+    .hidden{
+        transition: none;
+    }
+}
+.show{
+    opacity: 1;
+    
+}
+
+/* .logos{
+    display: flex;
+}
+
+.logo:nth-child(2){
+    transition-delay: 200ms;
+}
+.logo:nth-child(3){
+    transition-delay: 600ms;
+}
+.logo:nth-child(4){
+    transition-delay: 800ms;
+} */
+/* end of scroll bar */
+
+/* start of footer */
 .footer{
-    position: absolute;
     bottom: 0;
     width: 100%;
     height: 2.5rem;
@@ -41,6 +87,7 @@
 }
 
 .footer ul li a {
+    
     color: inherit;
     text-decoration: none;
     opacity: 0.8;
@@ -54,3 +101,4 @@
 .footer ul li a:hover{
     opacity: 1;
 }
+/* end of footer */
